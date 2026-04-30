@@ -52,7 +52,7 @@ There's an operational layer and a substance layer. They're easy to confuse and 
 
 **Operational scaffolding** is the part that runs on a clock — the weekly check-in, the export pipeline that pulls your past Claude conversations into searchable files, any other automation. It's the "how do I get organized" layer.
 
-**Substance** is what you're actually trying to do with your life — your North Star. This is the big directional thing you're working toward that's bigger than any weekly goal: a writing project, a fitness arc, a spiritual practice, a relationship you're rebuilding, a career inflection. The scaffolding exists to serve the substance. If your operational stuff is humming and the substance work isn't moving, the system is failing at its actual job. Build the operational layer, but design every part of it to push you toward the substance.
+**Substance** is what you're actually trying to do with your life — your North Star. This is your vision for what your life looks like when you're living fully aligned: the work you're doing, the family you're building, the relationships you're investing in, the impact you want to have, the way you spend your days. It's bigger than any weekly goal — it's the direction you want to be heading. The scaffolding exists to serve the substance. If your operational stuff is humming and the substance work isn't moving, the system is failing at its actual job. Build the operational layer, but design every part of it to push you toward the substance.
 
 ---
 
@@ -147,7 +147,7 @@ If you'd rather build piece by piece:
 1. **Create the project folder.** `~/Documents/Claude/Projects/<name>/`. Pick a short name (`CoS`, `cos`, `chief`, your initials).
 2. **Drop in your personal artifacts.** Whatever names what you care about — strategy doc, résumé, a vision statement, the last performance review you wrote about yourself. One to three files is enough.
 3. **Write `_system-context.md`** using the template in the starter kit. It's short — under a page. Cover: what this project is, who you are in two paragraphs, what your North Star is, what guardrails apply (preachy? no. sycophantic? no.).
-4. **Pick your North Star.** Something you've been deferring for years. Write `_north-star.md` using the template — it captures the goal, the framework, where you left off, and engagement notes. Don't pick three; pick one.
+4. **Pick your North Star.** What you actually want your life's work to be — across work, family, relationships, impact, all of it. Your vision for what your life looks like when you're living fully aligned. Write `_north-star.md` using the template — it captures the goal, the framework, where you left off, and engagement notes. Don't pick three; pick one.
 5. **Author the weekly SKILL.md.** Copy the template, change the name in the kickoff message, the Slack/iMessage destination, the reminders list name, the channel name. Test it once by running it manually before scheduling.
 6. **Register it as a scheduled task.** In Cowork: right-sidebar → Scheduled → "+", point at the SKILL.md, set a cron (Sundays 7pm is a good default), and associate it with your project so it inherits the context folder.
 7. **Wait until Sunday.** Don't tinker further until you've run the loop once.
@@ -317,7 +317,7 @@ Don't build these on day one. They're worth doing eventually.
 
 The thing that surprised me about running this for a few months: the most valuable artifact isn't the weekly summaries or the priorities or the Slack posts. It's the North Star doc. Because it forces you to write down where you left off — every session, in your own words — it becomes the only place that holds the through-line of work that doesn't fit on a quarterly horizon.
 
-Almost everyone has at least one of those threads. The one you've been deferring for three years. The one that would change something structural if you actually moved on it.
+Almost everyone, if they sit with it long enough, can describe the version of their life where everything is aligned — the work, the relationships, the family, the impact, the way they spend their days. That picture is your North Star. The point of the system is to keep you actively heading toward it instead of drifting.
 
 Pick that one.
 
