@@ -53,6 +53,28 @@ You don't have to use both surfaces. The minimum viable system is just Cowork wi
 
 ---
 
+## Connecting your existing goal-tracking tools (optional)
+
+Most of us already have a place where goals live — a Notion personal dashboard, a team OKR system, a Google Doc strategy doc, a Linear cycle, a company-internal tool. The fastest way to make CoS feel grounded — instead of feeling like a parallel siloed tracker — is to point it at those existing surfaces.
+
+Two lifecycle hooks make this work:
+
+1. **Read at session start.** Before the agent proposes priorities, it pulls the current state of your goal surfaces into context. The priorities it sets are aware of your company OKRs, ongoing initiatives, and whatever else lives in those tools.
+2. **Write back at session end.** After priorities are committed, the agent updates the goal surface with this week's priorities — appending to a Notion page, posting comments on Linear issues, marking last week's items complete.
+
+The point: your goal surface stays the source of truth. CoS reads from it and writes to it; CoS doesn't replace it. Cowork lets you connect MCPs (Notion, Linear, Asana, etc.) or drive web apps via Claude in Chrome, so you can wire CoS to whatever tools your work and life already use. The integration is bespoke per user — there's a generic pattern, but the specifics are yours to configure.
+
+**To wire it up:**
+1. List your goal surfaces. Pick the canonical one for each goal.
+2. For each, decide the access path: a dedicated MCP if available, Claude in Chrome if not, or a local file if that's enough.
+3. Decide read-only or writable per surface — start read-only, add write-back to surfaces you trust the loop on.
+4. Declare the integrations in your `_system-context.md` under a `## Goal-tracker integrations` section.
+5. The weekly SKILL has read and write hooks already wired up; they activate automatically when integrations are declared.
+
+The full pattern, conventions, and example shapes (Notion, Linear, Google Doc) are documented in `cos-system/integrations/README.md`. This is a Phase 2 enhancement — get the basic loop working for two weeks first, then layer this in once you know what your weekly task actually needs to read and write.
+
+---
+
 ## What you'll need
 
 - A laptop you keep on most of the day (the scheduled tasks run locally).

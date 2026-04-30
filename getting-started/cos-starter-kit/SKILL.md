@@ -93,6 +93,23 @@ If they have one, walk through `templates/_long-arc-track.md` with them. The que
 
 Write `~/Documents/Claude/Projects/<name>/_<track>.md`. Update `_system-context.md`'s "Active tracks" section to reference it.
 
+## Step 3.5 — (Optional) Identify existing goal-tracking tools
+
+Ask: "Where do your goals currently live, outside of this CoS system? Notion? Linear? A team OKR doc? A company-internal tool? A Google Doc?"
+
+If they say "nowhere" or "I don't have anything formal yet," skip this step — they can add integrations later, after running the basic loop for a few weeks.
+
+If they list one or more surfaces, ask for each:
+1. **What's the canonical surface?** If a goal lives in two places, which one would they update first if it changed?
+2. **Access path:** dedicated MCP (Notion, Linear, etc.), Claude in Chrome, or a local file export?
+3. **Read-only or writable?** Start read-only. They can turn on write-back per surface later, once they trust the loop.
+4. **What to read at session start?** A specific Notion page, all issues in the current Linear cycle, etc. Be specific.
+5. **What to write back at session end?** Append priorities to a subsection? Post comments on issues? Mark last week's items complete?
+
+Capture the answers as a `## Goal-tracker integrations` section in their `_system-context.md` (the SKILL template includes the read and write hooks already, gated on whether this section exists). If they don't have answers yet for a given surface, leave that surface declared as `read-only`, `read at start: full content`, `write at end: none` — that's a safe default.
+
+Be honest: this step is optional and is more useful after the user has run the basic loop for a few weeks. If they're unsure, skip and revisit later. The pattern is documented in `cos-system/integrations/README.md` for when they're ready.
+
 ## Step 4 — Author the weekly SKILL.md
 
 Open `templates/weekly-chief-of-staff-SKILL.md`. The template has placeholders the user has to fill in. Walk through them:

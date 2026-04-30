@@ -31,12 +31,13 @@ Before engaging, read these in full. They are the source of truth for who I am a
 
 1. `~/Documents/Claude/Projects/<PROJECT-NAME>/_system-context.md` — the system overview.
 2. `~/Documents/Claude/Projects/<PROJECT-NAME>/_<TRACK>.md` — the long-arc track doc. <Or remove this line if you have no track yet.>
+3. **Goal-tracker integrations declared in `_system-context.md`** (optional). If a `## Goal-tracker integrations` section exists and lists external surfaces (Notion, Linear, Google Doc, etc.), pull current state from each via the access path declared (MCP, Chrome, local file). This grounds the priorities you set in the goals/OKRs already declared in those tools. Skip if no integrations are declared. See `cos-system/integrations/README.md` for the pattern.
 
 ## Planning Session Steps
 
 1. **Check the calendar** — Pull <YOUR NAME>'s calendar for the upcoming week (Monday through Sunday). Flag any conflicts, overloaded days, or gaps.
 
-2. **Review last week's goals — and capture completion explicitly.** Read `~/Documents/Claude/cos-weekly-summary.md` from the previous session. Walk through last week's top 3 priorities one by one and capture which were **completed**, **partially completed**, or **didn't get touched**. Hold this list as structured data — you'll use it in step 8.
+2. **Review last week's goals — and capture completion explicitly.** Read `~/Documents/Claude/cos-weekly-summary.md` from the previous session. Walk through last week's top 3 priorities one by one and capture which were **completed**, **partially completed**, or **didn't get touched**. Hold this list as structured data — you'll use it in step 10.
 
 3. **Check the long-arc track explicitly.** This is the easiest step to skip and the most important not to. Ask:
    - Did the work on `<TRACK>` happen this past week? <If it's a daily practice: how many days?>
@@ -58,7 +59,9 @@ Before engaging, read these in full. They are the source of truth for who I am a
 
 7. **Save a weekly summary** — Write the summary to `~/Documents/Claude/cos-weekly-summary.md`. Structure it so next week's step 2 can parse it: each priority on its own line with a `Day:` field and a `Status:` field that next week will fill in (`completed` / `partial` / `skipped`).
 
-8. **Push priorities to <REMINDERS-APP>** — For each priority, append a reminder under the `<REMINDERS-LIST-NAME>` list:
+8. **Goal-tracker integration: write back** (optional) — For each integration declared in `_system-context.md`'s `## Goal-tracker integrations` section, perform the write specified there (e.g., append this week's priorities to a Notion page, post comments on Linear issues that map to priorities, update completion status on last week's items based on step 2). Rules: only write to surfaces explicitly marked writable; writes must be idempotent; failures get surfaced in the summary file and DM'd to the user, not silently skipped. Skip this step entirely if no integrations are declared. See `cos-system/integrations/README.md` for shapes and conventions.
+
+9. **Push priorities to <REMINDERS-APP>** — For each priority, append a reminder under the `<REMINDERS-LIST-NAME>` list:
    - **Title**: a short version of the priority (≤80 chars).
    - **Due date**: the specific day(s) captured in step 4 at 8:00 AM local. If multiple days, create one reminder per day. If no specific day, default to Monday 8:00 AM.
    - **Notes**: any context given during the session.
@@ -78,7 +81,7 @@ Before engaging, read these in full. They are the source of truth for who I am a
 
    If the script returns the `ERROR:` line, log it in the run output and skip — do not silently create the list. The list name is owned by the user.
 
-9. **Post recap to <ACCOUNTABILITY-CHANNEL>** — <Skip this step entirely if no accountability channel was configured.>
+10. **Post recap to <ACCOUNTABILITY-CHANNEL>** — <Skip this step entirely if no accountability channel was configured.>
 
    Open <NOTIFICATION-APP>, navigate to <ACCOUNTABILITY-CHANNEL>. **Read the last 2–3 weekly posts in the channel first to learn the current format** and match it. The post should contain:
    - **This week's goals** — the priorities from step 4.
@@ -99,7 +102,7 @@ Before engaging, read these in full. They are the source of truth for who I am a
    ❌ {skipped item} — {brief reason}
    ```
 
-10. **Send summary DM to <YOUR NAME>** — Open <NOTIFICATION-APP> again, send a brief DM with the top 3 priorities for the week. The channel post is for the group; the DM is personal.
+11. **Send summary DM to <YOUR NAME>** — Open <NOTIFICATION-APP> again, send a brief DM with the top 3 priorities for the week. The channel post is for the group; the DM is personal.
 
 ## Tone
 
