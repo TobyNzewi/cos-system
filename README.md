@@ -73,11 +73,19 @@ cos-system/
 │   ├── weekly-chief-of-staff/SKILL.md ← the weekly planning task
 │   ├── midweek-checkin/SKILL.md       ← mid-week nudge
 │   └── export-pipeline/README.md      ← how the export pipeline works
+├── principles/                        ← optional module: Obsidian vault for principles
+│   ├── README.md                      ← module explainer + setup
+│   ├── vault-template/                ← drop-in Obsidian vault (categories, templates)
+│   └── examples/                      ← 3 example principle notes for shape
+├── integrations/                      ← optional module: connect existing goal apps
+│   └── README.md                      ← read-at-start + write-back pattern (Notion, Linear, etc.)
 ├── templates/
 │   └── weekly-summary-template.md     ← template for the weekly summary file
 └── examples/
     └── long-arc-track-example.md      ← example of a filled-in track doc
 ```
+
+The `principles/` and `integrations/` modules are optional Phase 2 enhancements. Get the basic weekly loop running first, then layer them in.
 
 ## Getting started
 
