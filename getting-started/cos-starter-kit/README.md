@@ -1,6 +1,6 @@
 # cos-starter-kit
 
-A small kit for bootstrapping your own Chief-of-Staff project — a personal-strategy LLM setup that runs a weekly planning session, holds your long-arc tracks, and shares context across all your sessions.
+A small kit for bootstrapping your own Chief-of-Staff project — a personal-strategy LLM setup that runs a weekly planning session, holds your North Star and the tracks that serve it, and shares context across all your sessions.
 
 For the philosophy and architecture, read `build-your-own-cos.md` (one folder up). This README just describes what's in the kit.
 
@@ -12,7 +12,7 @@ cos-starter-kit/
 ├── SKILL.md                                   the setup scaffolder — invoke this
 └── templates/
     ├── _system-context.md                     project spine, fill-in-the-blank
-    ├── _long-arc-track.md                     one long-arc track, fill-in-the-blank
+    ├── _north-star-track.md                   one North Star track, fill-in-the-blank
     ├── weekly-chief-of-staff-SKILL.md         the weekly scheduled task, fill-in-the-blank
     └── README-for-folder.md                   drop-in folder readme
 ```
@@ -31,7 +31,7 @@ cos-starter-kit/
 ~/Documents/Claude/Projects/<your-name>/
 ├── <your personal artifacts>
 ├── _system-context.md
-└── _<track>.md           (if you opted in to a long-arc track)
+└── _<track>.md           (if you picked a North Star track)
 
 ~/Documents/Claude/Scheduled/weekly-chief-of-staff/SKILL.md
 ```

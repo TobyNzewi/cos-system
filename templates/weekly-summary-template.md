@@ -23,7 +23,7 @@ Notes: [CONTEXT]
 
 - [Any conflicts identified and how they were handled]
 
-## Long-arc track status
+## Track status
 
 - [Did the track work happen this week? How many sessions?]
 - [What's being worked on right now?]
@@ -37,7 +37,7 @@ Notes: [CONTEXT]
 
 1. Walk through each priority above and capture completion (`completed` / `partial` / `skipped`).
 2. [Any specific follow-ups from this week]
-3. Track check: [what to ask about the long-arc track]
+3. Track check: [what to ask about the track]
 4. Set priorities for the following week.
 5. Conflict scan for the upcoming calendar.
 

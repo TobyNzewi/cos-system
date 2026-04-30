@@ -1,6 +1,6 @@
 ---
 name: cos-starter-kit
-description: Walk a new user through bootstrapping their own Chief-of-Staff project — creates the folder, drafts the system-context and long-arc-track files with them, and produces a weekly scheduled-task SKILL.md they can register. Use when someone says "help me build a CoS / chief of staff system / personal-strategy LLM setup."
+description: Walk a new user through bootstrapping their own Chief-of-Staff project — creates the folder, drafts the system-context and North Star track files with them, and produces a weekly scheduled-task SKILL.md they can register. Use when someone says "help me build a CoS / chief of staff system / personal-strategy LLM setup."
 ---
 
 You are helping the user bootstrap their own personal Chief-of-Staff (CoS) system. They probably found this skill via the `build-your-own-cos.md` document, but don't assume — start by orienting them briefly.
@@ -10,13 +10,13 @@ You are helping the user bootstrap their own personal Chief-of-Staff (CoS) syste
 Three things:
 
 1. **A project folder** under `~/Documents/Claude/Projects/<name>/` containing 1–3 of the user's personal artifacts plus a short `_system-context.md` file that tells future Claude sessions how to behave.
-2. **One long-arc track doc** (`_<track>.md`) for the substance work the user has been deferring. Optional but strongly recommended — the system feels hollow without it.
+2. **One North Star track doc** (`_<track>.md`) for the direction the user wants their life's work heading. Optional but strongly recommended — the system feels hollow without it.
 3. **A weekly chief-of-staff SKILL.md** at `~/Documents/Claude/Scheduled/weekly-chief-of-staff/SKILL.md` that the user will register as a scheduled task to run every Sunday evening.
 
 You have three template files to work from in the `templates/` folder next to this SKILL.md:
 
 - `templates/_system-context.md`
-- `templates/_long-arc-track.md`
+- `templates/_north-star-track.md`
 - `templates/weekly-chief-of-staff-SKILL.md`
 
 The flow below walks the user through filling these in, in order. Don't dump the templates raw — work through them with the user, asking the questions the templates need answered.
@@ -59,7 +59,7 @@ Open `templates/_system-context.md` for reference but don't paste it verbatim. A
 
 The questions, in order:
 
-1. **What is this project for, in one paragraph?** Example: "A chief-of-staff system that runs a weekly planning session against my five-year strategy, holds my long-arc tracks, and pulls my Claude conversation history into searchable files." Their answer should reference what they already have, not aspirational.
+1. **What is this project for, in one paragraph?** Example: "A chief-of-staff system that runs a weekly planning session against my five-year strategy, holds my North Star and the tracks that serve it, and pulls my Claude conversation history into searchable files." Their answer should reference what they already have, not aspirational.
 
 2. **Who are you, in two paragraphs?** Push for specificity. Role + employer, where they are in their career, what's at stake, what they've explicitly committed to (in the strategy doc they uploaded, if there is one). If they hand-wave, ask: "If a fresh Claude has to make a judgment call about what matters to you, what's the one paragraph that should ground it?"
 
@@ -71,19 +71,22 @@ The questions, in order:
 
 Now write `~/Documents/Claude/Projects/<name>/_system-context.md`, structured per the template, with their answers populated. Show it to them and ask: "Anything missing or wrong?" Edit as needed.
 
-## Step 3 — Pick (or skip) one long-arc track
+## Step 3 — Pick (or skip) your North Star track
 
-Ask: "What's something you've been deferring for years that would change something structural in your life if you actually moved on it?"
+Start by asking about their North Star: "When you think about your life's work heading in the direction you actually want it to go — across your work, family, relationships, and impact — what does that look like? What's the picture?"
+
+Once they give you that, ask: "Looking at that picture, what's one specific operative track that would move you toward it? Something concrete you can work on over weeks and months."
 
 Examples of valid tracks (give 2–3, don't lecture):
-- A book or piece of writing you've been meaning to start.
-- A daily practice (meditation, scripture, language learning) you've never made stick.
-- A career inflection (going independent, switching industries, taking a partner-track role).
-- A relationship you want to deliberately invest in — a parent, a sibling, a mentor.
+- A book or piece of writing that expresses something you care about.
+- A daily practice (meditation, scripture, language learning) that anchors your week.
+- A career inflection you're actively working toward.
+- A relationship you're deliberately investing in — a parent, a sibling, a mentor.
+- A skill or craft you want to develop.
 
-If they say "I don't have one" — that's fine, skip this step. Note in `_system-context.md` that no track is active yet and move on. **Do not pressure them.** A hollow track doc is worse than no track doc.
+If they say "I don't have one yet" — that's fine, skip this step. Note in `_system-context.md` that no North Star track is active yet and move on. **Do not pressure them.** A hollow track doc is worse than no track doc.
 
-If they have one, walk through `templates/_long-arc-track.md` with them. The questions:
+If they have one, walk through `templates/_north-star-track.md` with them. The questions:
 
 1. **What's the track and the goal?** One paragraph.
 2. **What's the framing you're operating inside?** What question are you sitting with? What's the shape of progress?
@@ -91,7 +94,7 @@ If they have one, walk through `templates/_long-arc-track.md` with them. The que
 4. **Where do you start?** What's the first session about? What's the natural opening?
 5. **What engagement notes apply specifically to this track?** Often more pointed than the project-wide guardrails.
 
-Write `~/Documents/Claude/Projects/<name>/_<track>.md`. Update `_system-context.md`'s "Active tracks" section to reference it.
+Write `~/Documents/Claude/Projects/<name>/_<track>.md`. Update `_system-context.md`'s "North Star" section to reference it.
 
 ## Step 3.5 — (Optional) Identify existing goal-tracking tools
 
@@ -172,7 +175,7 @@ Show the user the final state:
 ~/Documents/Claude/Projects/<name>/
 ├── <their artifacts>
 ├── _system-context.md
-└── _<track>.md     (if they made one)
+└── _<track>.md     (if they picked a North Star track)
 
 ~/Documents/Claude/Scheduled/weekly-chief-of-staff/SKILL.md
 ```
@@ -182,7 +185,7 @@ Final notes to share:
 - "The hardest part is not tinkering. Use it for two weeks before changing anything."
 - "Re-read `_system-context.md` every few weeks. It goes stale. Update the 'where I left off' line on the track each session."
 - "If the Sunday session feels reflective instead of useful, your system context isn't pushing back hard enough. Strengthen the guardrails."
-- "Optional next steps when you're ready: add a midweek check-in task; set up an export pipeline to pull your Claude.ai history into searchable files; add a daily practice scheduled task for the long-arc track; switch from a synchronous Sunday chat to the voice-on-mobile → export → execute flow (voice chat in the Claude app at 7pm, export pipeline at 7:45pm, weekly task in Cowork at 8:30pm reads the transcript and acts on it). None of these are needed on day one."
+- "Optional next steps when you're ready: add a midweek check-in task; set up an export pipeline to pull your Claude.ai history into searchable files; add a daily practice scheduled task for your North Star track; switch from a synchronous Sunday chat to the voice-on-mobile → export → execute flow (voice chat in the Claude app at 7pm, export pipeline at 7:45pm, weekly task in Cowork at 8:30pm reads the transcript and acts on it). None of these are needed on day one."
 - "Anytime during the week, you can open a fresh Cowork chat in your CoS project to make tweaks — adjust a goal, share new context, push a one-off reminder. The weekly task is the rhythm; Cowork is always available between rhythms."
 
 Tell them to run the first session this Sunday and come back if anything's off.

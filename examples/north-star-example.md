@@ -1,6 +1,6 @@
 # Example: Principles & Scripture journaling track
 
-_This is a sanitized example of a filled-in long-arc track doc. It shows what a real track looks like when populated — the structure, the level of specificity, the engagement notes. Your track will have different content but should aim for this level of concreteness. Replace everything below with your own._
+_This is a sanitized example of a filled-in North Star track doc. It shows what a real track looks like when populated — the structure, the level of specificity, the engagement notes. Your track will have different content but should aim for this level of concreteness. Replace everything below with your own._
 
 ---
 
@@ -10,14 +10,14 @@ _Last updated: [DATE]. Read this before engaging me on faith, principles, values
 
 ## What this track is
 
-A long-arc journaling practice combining a personal principles framework (inspired by Ray Dalio's methodology) with biblical scripture. Goals:
+A journaling practice that serves my North Star by combining a personal principles framework (inspired by Ray Dalio's methodology) with biblical scripture. Goals:
 
 1. Articulate my own principles in my own words, drawn from actual experience.
 2. Test each one against scripture — confirming, refining, or challenging.
 3. Maintain a living document refined across many sessions, not a one-shot output.
 4. Connect what I read in the Bible to what is actually happening in my week — career, relationships, decisions.
 
-My strategy doc has named this goal every year for three years. The intellectual recognition has been stable. What's been missing is the practice that turns it from known into felt. That's what this track exists to provide.
+My strategy doc has named this commitment every year for three years. The intellectual recognition has been stable. What's been missing is the practice that turns it from known into felt. That's what this track exists to provide.
 
 ## The framing
 

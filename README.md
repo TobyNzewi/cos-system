@@ -1,6 +1,6 @@
 # CoS — Chief of Staff AI System
 
-A personal chief-of-staff system built on Claude. It runs a weekly planning loop, holds long-arc personal development tracks across sessions, and executes against your calendar, reminders, and accountability channels — so your goals don't just sit in a doc.
+A personal chief-of-staff system built on Claude. It runs a weekly planning loop, holds your North Star and the tracks that serve it across sessions, and executes against your calendar, reminders, and accountability channels — so your goals don't just sit in a doc.
 
 ## What this is
 
@@ -8,12 +8,12 @@ CoS is a project folder on your computer. It contains a few files about you (a s
 
 ## Why it exists
 
-Most people have a strategy doc or a goals list somewhere. It sits in a folder. Nothing in the week pulls on it. What's missing is a thin, persistent layer between that long-arc strategy and the actual week — something that:
+Most people have a strategy doc or a goals list somewhere. It sits in a folder. Nothing in the week pulls on it. What's missing is a thin, persistent layer between your North Star and the actual week — something that:
 
 - Knows who you are and what you're working on, without re-explaining every chat
 - Shows up on its own each Sunday and runs a planning session against last week's goals
 - Has continuous memory across conversations via files, not chat history
-- Holds at least one long-arc track — a thread of work that takes years, not days
+- Holds your North Star and the tracks that serve it — the direction you want your life heading
 
 Off-the-shelf productivity tools track tasks; they don't think with you. CoS is an LLM with persistent context, a calendar, and a clock.
 
@@ -66,7 +66,7 @@ cos-system/
 │       ├── SKILL.md                   ← interactive setup scaffolder
 │       └── templates/
 │           ├── _system-context.md     ← project spine, fill-in-the-blank
-│           ├── _long-arc-track.md     ← long-arc track, fill-in-the-blank
+│           ├── _north-star-track.md   ← North Star track, fill-in-the-blank
 │           ├── weekly-chief-of-staff-SKILL.md
 │           └── README-for-folder.md
 ├── scheduled-tasks/
@@ -82,7 +82,7 @@ cos-system/
 ├── templates/
 │   └── weekly-summary-template.md     ← template for the weekly summary file
 └── examples/
-    └── long-arc-track-example.md      ← example of a filled-in track doc
+    └── north-star-example.md          ← example of a filled-in track doc
 ```
 
 The `principles/` and `integrations/` modules are optional Phase 2 enhancements. Get the basic weekly loop running first, then layer them in.
@@ -109,7 +109,7 @@ The `principles/` and `integrations/` modules are optional Phase 2 enhancements.
 ~/Documents/Claude/Projects/<your-project>/
 ├── <your personal artifacts>
 ├── _system-context.md             ← the spine — read first by every session
-└── _<track>.md                    ← your long-arc track (if you opted in)
+└── _<track>.md                    ← your North Star track (if you opted in)
 
 ~/Documents/Claude/Scheduled/weekly-chief-of-staff/SKILL.md
 ```
@@ -127,9 +127,9 @@ A scheduled task that fires every Sunday, reads your context, reviews your week,
 
 **Scheduled task fires while your laptop is closed.** It just doesn't run. Keep the laptop open at the scheduled time, or move the cron.
 
-**The weekly task drifts into vagueness.** Your `_system-context.md` got stale. Re-read it every few weeks; update the "active tracks" and "where I left off" sections.
+**The weekly task drifts into vagueness.** Your `_system-context.md` got stale. Re-read it every few weeks; update the "North Star" and "where I left off" sections.
 
-**The long-arc track stalls.** Most common failure. Usually means you picked the wrong track or set it up too elaborately. Simplify.
+**The North Star stalls.** Most common failure. Usually means you picked the wrong one or set it up too elaborately. Simplify.
 
 **You start tinkering instead of using.** Set a rule: no changes between Sunday sessions. Use it for two weeks before iterating.
 

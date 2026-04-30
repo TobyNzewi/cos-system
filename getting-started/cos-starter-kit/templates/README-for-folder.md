@@ -11,7 +11,7 @@ The folder contains:
 - **Personal artifacts** — strategy doc, résumé, anything that grounds "who I am."
 - **Reference corpus** — books or frameworks I'm anchoring on (full PDFs).
 - **Distilled summaries** — short markdown versions of the corpus, loaded into context every session.
-- **System docs** — `_system-context.md` (project spine) and `_<track>.md` (long-arc track).
+- **System docs** — `_system-context.md` (project spine) and `_<track>.md` (North Star track).
 
 ## How to use it
 

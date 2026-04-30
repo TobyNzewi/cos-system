@@ -4,7 +4,7 @@ _Last updated: <YYYY-MM-DD>. Read this in full before engaging me on <topic / qu
 
 ## What this track is
 
-<ONE PARAGRAPH. The goal. Why now. What's structurally different in your life if you actually move on this. Don't make it grandiose — make it specific.>
+<ONE PARAGRAPH. The goal. How it serves your North Star. What's structurally different in your life if you actually move on this. Don't make it grandiose — make it specific.>
 
 Goals:
 

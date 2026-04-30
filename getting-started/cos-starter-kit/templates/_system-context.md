@@ -9,7 +9,7 @@ _Last updated: <YYYY-MM-DD>. Read this file in full before doing anything substa
 Two layers worth distinguishing:
 
 - **Operational scaffolding** — the scheduled tasks (weekly chief-of-staff, etc.) and the artifacts they produce. The "how do I get organized" layer.
-- **Substance** — <YOUR LONG-ARC TRACK NAME>, captured in `_<track>.md`. The "what am I actually trying to become" layer. The scaffolding exists to serve this. If the operational stuff is humming and the substance work isn't moving, the system is failing at its actual job.
+- **Substance** — my North Star and the track that serves it, captured in `_<track>.md`. The direction I want my life's work heading. The scaffolding exists to serve this. If the operational stuff is humming and the substance work isn't moving, the system is failing at its actual job.
 
 The project lives at `~/Documents/Claude/Projects/<NAME>/`.
 
@@ -19,17 +19,17 @@ The project lives at `~/Documents/Claude/Projects/<NAME>/`.
 
 <If you have a multi-year strategy doc — name it, say what it is, treat it as the authoritative artifact. Tell future Claude to quote it back to you when relevant.>
 
-## Active tracks
+## North Star
 
 ### <Track name>
 
 **Doc:** `~/Documents/Claude/Projects/<NAME>/_<track>.md` — read this in full before engaging me on <topic>.
 
-**Summary:** <ONE PARAGRAPH. What this track is and what it's working toward.>
+**Summary:** <ONE PARAGRAPH. My North Star and what this track is working toward.>
 
-**Why it's central:** <Why this isn't optional. What deferring it has cost. What the weekly task should explicitly check on this each week.>
+**Why it matters:** <What this represents. The weekly task should explicitly check on this each week.>
 
-<If you have additional tracks, repeat the block. Three becomes none — keep this short.>
+<If you have additional tracks over time, add them as secondary tracks. Keep this section focused on one primary North Star direction.>
 
 ## Scheduled tasks
 
@@ -75,7 +75,7 @@ The files here are deliberate, not incidental. Each one earns its place by being
 
 **System docs (the "how this works" layer):**
 
-- `_<track>.md` — long-arc track doc. Read before engaging on <topic>.
+- `_<track>.md` — North Star track doc. Read before engaging on <topic>.
 - `_system-context.md` — this file. Read first by every new session in this project.
 
 ## Known soft spots / what could break
